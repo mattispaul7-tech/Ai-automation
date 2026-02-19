@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Automation Business</title>
   <style>
     body {
@@ -13,7 +13,7 @@
       text-align: center;
     }
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
     h1 {
       font-size: 42px;
@@ -34,6 +34,7 @@
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
     .services {
       padding: 60px 20px;
@@ -44,6 +45,23 @@
       margin: 20px auto;
       border-radius: 12px;
       max-width: 300px;
+    }
+    .form-section {
+      padding: 80px 20px;
+      background: #020617;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px 0;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
     }
     footer {
       padding: 40px;
@@ -56,7 +74,7 @@
 <header>
   <h1>AI Automation for Your Business</h1>
   <p>I help businesses save time and increase profits by automating repetitive tasks using AI.</p>
-  <a class="btn" href="#">Get Started</a>
+  <a class="btn" href="#get-started">Get Started</a>
 </header>
 
 <section class="services">
@@ -76,7 +94,32 @@
     <h3>Custom AI Solutions</h3>
     <p>Tailored automation built for your business needs.</p>
   </div>
+</section>
 
+<section id="get-started" class="form-section">
+  <h2>Get Started</h2>
+  <p>Fill out the form below and we will contact you.</p>
+
+  <form>
+    <label>Name</label>
+    <input type="text" placeholder="Your Name" required />
+
+    <label>Email</label>
+    <input type="email" placeholder="Your Email" required />
+
+    <label>What service do you need?</label>
+    <select required>
+      <option value="">Select a service</option>
+      <option>AI Chatbot</option>
+      <option>Workflow Automation</option>
+      <option>Custom AI Solution</option>
+    </select>
+
+    <label>Tell us about your project</label>
+    <textarea rows="4" placeholder="Describe what you need..."></textarea>
+
+    <button class="btn" type="submit">Submit</button>
+  </form>
 </section>
 
 <footer>
